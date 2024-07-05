@@ -1,0 +1,138 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+header {
+    background: linear-gradient(135deg, #0421a3, #764ba2);
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav a {
+    color: #333;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #061869;
+}
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.intro, .projetos, .contato {
+    margin-bottom: 3rem;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.projeto {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto img{
+    width: 100%;
+    height: 100%;
+}
+
+.projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projeto h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.projeto p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #667eea;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #f9f9f9;
+    }
+    header {
+        background: linear-gradient(135deg, #1e3a8a, #1e40af);
+    }
+    nav {
+        background-color: #1f2937;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    }
+    nav a {
+        color: #f9f9f9;
+    }
+    nav a:hover {
+        color: #a5b4fc;
+    }
+    h2 {
+        border-bottom: 2px solid #a5b4fc;
+    }
+    .projeto {
+        background-color: #1f2937;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+    .footer {
+        background-color: #1e3a8a;
+    }
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+    .container {
+        padding: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .projeto {
+        padding: 1rem;
+    }
+    .projeto h3 {
+        font-size: 1.25rem;
+    }
+}

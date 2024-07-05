@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url("Chomsky.otf");
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    background: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 230px 0 190px;
+}
+
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+    letter-spacing: 1.4px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    align-self: start;
+    width: 100vw;
+}
+
+.regiao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -10.4%;
+    font-size: 10.7px;
+    color: #d9d9d9;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+}
+
+#pesquisar {
+    position: relative;
+    left: 5px;
+    top: 13px;
+    width: 14px;
+}
+
+#botoesHeader {
+    position: absolute;
+    right: 10%;
+    top: 5px;
+    width: 300px;
+}
+
+.button {
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 9px 13px;
+    background-color: rgb(86, 123, 149);
+    border-radius: 3px;
+    margin-left: 3px;
+    letter-spacing: 0.05em;
+}
+
+.list1 {
+    width: 100%;
+    height: 25%;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+#internatioal {
+    font-weight: 500;
+}
+
+.list2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#titulo {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-family: myFont !important;
+    font-weight: 100;
+    font-size: 69px;
+    margin-top: 12.5px;
+    margin-left: 15.4px;
+    letter-spacing: -0.6px;
+    word-spacing: -7.6px;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    margin-left: -245px;
+}
+
+#dolar {
+    display: flex;
+    align-self: end;
+    justify-self: end;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+#dia {
+    margin-top: 26px;
+}
+
+#dia,
+.li1 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.list3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 104.5%;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    border-bottom: black 1px solid;
+}
+
+.li1 {
+    padding: 2px 19px 0 19px;
+    margin-bottom: 14.5px;
+}
+
+.li1:hover {
+    border-bottom: black solid 2px;
+}
+
+section {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+section:not(#roxo2) {
+    border-bottom: black 1px solid;
+}
+
+.contLaranja,
+.titLaranja {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.titLaranja:hover {
+    color: #808080;
+}
+
+.titLaranja:not(#ir1) {
+    margin-top: 20px;
+    border-bottom: 1px solid #DFDFDF;
+    padding-bottom: 25px;
+}
+
+.descLaranja {
+    border-bottom: 1px solid #DFDFDF;
+}
+
+#roxo2 {
+    width: 45%;
+    height: 100%;
+}
+
+.pag {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+}
+
+.contLaranja:not(.borderBfalse),
+p {
+    color: #5A5A5A;
+    border-bottom: 1px solid #DFDFDF;
+    padding: 10px 10px 20px 0.5px;
+    font-size: 16px;
+}
+
+.laranja {
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.verde {
+    display: flex;
+    flex-direction: column;
+    scale: 0.9;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    margin-right: -30px;
+}
+
+#roxo2 {
+    margin-left: 15px;
+    border-left: 1px solid rgba(190, 190, 190, 0.808);
+    padding-left: 15px;
+    height: 110%;
+}
+
+#roxo2 img {
+    width: 108%;
+}
+
+#roxo2 a:hover {
+    color: #5A5A5A;
+}
+
+#roxo2 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+
+#cardapio {
+    display: none;
+}
+
+#dia2 {
+    display: none;
+}
+
+#user {
+    display: none;
+}
+
+.button2 {
+    display: none;
+}
+
+#laranja1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#mobile {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+
+    @font-face {
+        font-family: myFont;
+        src: url("Chomsky.otf");
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+        font-family: Roboto;
+        background: none;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-items: center;
+        align-items: center;
+        align-content: flex-start;
+        height: 50px;
+        width: 100vw;
+    }
+
+    .list1 {
+        display: none;
+    }
+
+    .list2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: flex-start;
+        margin-top: 5px;
+    }
+
+    .list3 {
+        display: none;
+    }
+
+    #titulo {
+        font-size: 27px;
+        font-family: myFont !important;
+        letter-spacing: -0.3px;
+        word-spacing: -3px;
+        margin-top: -7px;
+        margin-left: -100px;
+    }
+
+    #dolar {
+        display: none;
+    }
+
+    #dia {
+        display: none;
+    }
+
+    #roxo {
+        width: 100%;
+    }
+
+    #roxo2 {
+        display: none;
+    }
+
+    #cardapio {
+        display: block;
+        width: 17px;
+        position: absolute;
+        margin-top: -4px;
+        left: 18.5px;
+    }
+
+    .pag {
+        width: 100%;
+        height: auto;
+    }
+
+    .verde {
+        height: 100px;
+        margin-top: 50px;
+    }
+
+    .list4 {
+        display: flex;
+        align-items: center;
+        justify-items: flex-start;
+        background-color: #f7f7f7;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: 36px;
+        border-top: 1px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+        padding-top: 2px;
+    }
+
+    #dia2 {
+        display: block;
+        position: relative;
+        left: 20px;
+        top: 33px;
+        height: 100px;
+        font-weight: 600;
+        border: 0;
+    }
+
+    #user {
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 15px;
+    }
+
+    .button2 {
+        display: block;
+        position: absolute;
+        right: 20px;
+        font-size: 10px;
+        top: 10.4px;
+        color: rgb(50, 104, 145);
+        font-weight: 400;
+        letter-spacing: 0.1px;
+        font-weight: 400;
+    }
+
+    .laranja {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 26px;
+
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .verde {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #listaSuspensa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100vw;
+        background-color: white;
+        height: 200vh;
+        z-index: 1;
+    }
+
+    #fechar {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 30px;
+        z-index: 2;
+    }
+
+    #pesquis {
+        width: 84%;
+        height: 38px;
+        border-radius: 4px;
+        z-index: 2;
+        padding: 9px 10px;
+        border: #808080 1px solid;
+    }
+
+    #pesquisaLista {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 70px;
+        width: 90%;
+        height: 150px;
+        justify-content: space-around;
+    }
+
+    #pesquis::placeholder {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .lii{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        margin-top: 90px;
+    }
+
+    .lii1{
+        border-bottom: #dbdbdbb9 1px solid;
+        width: 88%;
+        height: 100%;
+        align-self: center;
+    }
+
+    .li2{
+        letter-spacing: 0.2px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-weight: bold;
+        font-size: 17.4px;
+    }
+
+    #ir{
+        width: 37px;
+        height: 37px;
+        background-color: rgba(86, 123, 149, 0.5);
+        border-radius: 5px;
+        color: white;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    #lii2{
+        border-bottom: black 2px solid;
+    }
+}

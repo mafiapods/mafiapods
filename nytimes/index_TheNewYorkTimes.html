@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New York Times - Gabriel Medeiros</title>
+    <link rel="stylesheet" href="style_TheNewYorkTimes.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script_TheNewYorkTimes.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="list1">
+            <img src="lupa.png" alt="Pesquisar" id="pesquisar">
+            <div class="regiao">
+                <a href="https://www.nytimes.com/">
+                    <li>U.S.</li>
+                </a>
+                <a href="https://www.nytimes.com/international/">
+                    <li id="international">INTERNATIONAL</li>
+                </a>
+                <a href="https://www.nytimes.com/ca/">
+                    <li>CANADA</li>
+                </a>
+                <a href="https://www.nytimes.com/es/">
+                    <li>ESPAÑOL</li>
+                </a>
+                <a href="https://cn.nytimes.com/">
+                    <li>中文</li>
+                </a>
+            </div>
+            <div id="botoesHeader">
+                <a href="https://www.nytimes.com/subscription?campaignId=9YU8R">
+                    <button class="button">SUBSCRIBE FOR $0.25/WEEK</button>
+                </a>
+                <a
+                    href="https://myaccount.nytimes.com/auth/login?response_type=cookie&client_id=vi&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Fsubscription%2Fonboarding-offer%3FcampaignId%3D7JFJX%26EXIT_URI%3Dhttps%253A%252F%252Fwww.nytimes.com%252Finternational%252F&asset=masthead">
+                    <button class="button">LOGIN</button>
+                </a>
+            </div>
+        </div>
+        <div class="list2">
+            <div id="dia">Wednesday, May 22, 2024 <br><br>
+                Today’s Paper
+            </div>
+        </div>
+        <div class="list3">
+            <ul class="list3">
+                <a href="https://www.nytimes.com/international/section/us">
+                    <li class="li1"> U.S.</li>
+                </a>
+                <a href="https://www.nytimes.com/international/section/world">
+                    <li class="li1"> World</li>
+                </a>
+                <a href="https://www.nytimes.com/international/section/business">
+                    <li class="li1"> Business</li>
+                </a>
+                <a href="https://www.nytimes.com/international/section/arts">
+                    <li class="li1"> Arts</li>
+                </a>
+                <a href="https://www.nytimes.com/spotlight/lifestyle">
+                    <li class="li1"> Lifestyle</li>
+                </a>
+                <a href="https://www.nytimes.com/international/section/opinion">
+                    <li class="li1"> Opinion</li>
+                </a>
+                <a href="https://www.nytimes.com/spotlight/podcasts">
+                    <li class="li1"> Audio</li>
+                </a>
+                <a href="https://www.nytimes.com/crosswords">
+                    <li class="li1"> Games</li>
+                </a>
+                <a href="https://cooking.nytimes.com/">
+                    <li class="li1"> Cooking</li>
+                </a>
+                <a href="https://www.nytimes.com/wirecutter/">
+                    <li class="li1"> Wirecutter</li>
+                </a>
+                <a href="https://www.nytimes.com/athletic/">
+                    <li class="li1"> The Athletic</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="list4">
+            <p id="dia2" style="color: black; font-size: 11px;">Wednesday, May 22, 2024</p>
+            <a href="https://www.nytimes.com/subscription?campaignId=9YU8R">
+                <button class="button2">SUBSCRIBE FOR $0.25/WEEK</button>
+            </a>
+        </div>
+        <div id="mobile">
+            <button onclick="mostrarLista()">
+                <img src="cardap.png" alt="Cardápio" id="cardapio">
+            </button>
+            <div id="listaSuspensa" style="display: none;">
+                <button onclick="ocultarLista()">
+                    <img src="x.png" alt="Fechar" id="fechar">
+                </button>
+                <nav>
+                    <div id="pesquisaLista">
+                        <input type="search" name="pesquisa" id="pesquis" placeholder="SEARCH">
+                        <button id="ir">GO</button>
+                    </div>
+                    <ul class="lii">
+                        <div class="lii1">
+                            <a href="https://www.nytimes.com/international/section/us">
+                                <li class="li2"> U.S.</li>
+                            </a>
+                        </div>
+                        <div class="lii1"><a href="https://www.nytimes.com/international/section/world">
+                                <li class="li2"> World</li>
+                            </a></div>
+                        <div class="lii1"> <a href="https://www.nytimes.com/international/section/business">
+                                <li class="li2"> Business</li>
+                            </a>
+                        </div>
+                        <div class="lii1"><a href="https://www.nytimes.com/international/section/arts">
+                                <li class="li2"> Arts</li>
+                            </a></div>
+                        <div class="lii1"> <a href="https://www.nytimes.com/spotlight/lifestyle">
+                                <li class="li2"> Lifestyle</li>
+                            </a>
+                        </div>
+                        <div class="lii1" id="lii2"><a href="https://www.nytimes.com/international/section/opinion">
+                                <li class="li2"> Opinion</li>
+                            </a>
+                        </div>
+                        <div class="lii1"> <a href="https://www.nytimes.com/spotlight/podcasts">
+                                <li class="li2"> Audio</li>
+                            </a>
+                        </div>
+                        <div class="lii1"> <a href="https://www.nytimes.com/crosswords">
+                                <li class="li2"> Games</li>
+                            </a>
+                        </div>
+                        <div class="lii1"> <a href="https://cooking.nytimes.com/">
+                                <li class="li2"> Cooking</li>
+                            </a>
+                        </div>
+                        <div class="lii1"> <a href="https://www.nytimes.com/wirecutter/">
+                                <li class="li2"> Wirecutter</li>
+                            </a>
+                        </div>
+                        <div class="lii1"> <a href="https://www.nytimes.com/athletic/">
+                                <li class="li2"> The Athletic</li>
+                            </a>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <a href="https://www.nytimes.com/">
+            <h1 id="titulo" style="color: black;">The New York Times</h1>
+        </a>
+        <p id="dolar" style="word-spacing: 5px;">Dólar <span style="color: green; margin-left: 5px;"> R$5,12 </span></p>
+        <img src="user.png" alt="Usuário" id="user">
+
+    </header>
+
+    <div class="pag">
+        <section id="roxo">
+            <div id="verde">
+                <div class="laranja">
+                    <div id="laranja1">
+                        <div class="titLaranja" id="ir1">
+                            <h3 style="font-family: 'Times New Roman', Times, serif;">Trump Chooses Not to Take the
+                                Stand, and the Defense Rests</h3>
+                        </div>
+                        <div class="contLaranja">Donald Trump’s lawyers mounted a minimal defense after prosecutors
+                            called
+                            20 witnesses. Closing arguments will take place May 28.</div>
+
+                        <div class="laranja">
+                            <div class="titLaranja">
+                                <h4 style="font-family: 'Times New Roman', Times, serif;">Here are five takeaways from
+                                    the 20th day of the trial.</h4>
+                            </div>
+                            <div class="contLaranja"></div>
+                        </div>
+                        <div class="laranja">
+                            <div class="titLaranja">
+                                <h4 class="borderBfalse" style="font-family: 'Times New Roman', Times, serif;">Trump
+                                    Chooses Not to Take the Stand, and the Defense Rests</h4>
+                            </div>
+                            <div class="contLaranja borderBfalse"></div>
+                        </div>
+                    </div>
+                    <img class="verde" src="nytPres.png" alt="Foto Matéria">
+                </div>
+            </div>
+        </section>
+        <section id="roxo2">
+            <a href="https://www.nytimes.com/article/how-to-cook-broccoli.html">
+                <img src="nytBroc.png" alt="Capa Brócolis">
+                <h2>Learn to Make the Best Broccoli of Your Life (Really!)</h2>
+                <p>The cookbook author and chef Sohla El-Waylly will teach you how to maximize this popular, but
+                    sometimes divisive vegetable.</p>
+            </a>
+        </section>
+    </div>
+</body>
+
+</html>

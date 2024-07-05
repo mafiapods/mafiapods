@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flop-Flop</title>
+    <link rel="stylesheet" href="apresentFlop-Flop.css">
+    <script src="jogoFlop-Flop.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #board {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-top: 5px solid rgba(195, 185, 65, 0.95);
+            border-bottom: 5px solid rgba(195, 185, 65, 0.95);
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+    </style>
+
+    <script>
+        function mostrarJogo() {
+            document.getElementById('board').style.display = 'block';
+            document.getElementById('mostrarJogo').style.display = 'none';
+            document.getElementById('esconderJogo').style.display = 'block';
+        }
+
+        function esconderJogo() {
+            document.getElementById('board').style.display = 'none';
+            document.getElementById('mostrarJogo').style.display = 'block';
+            document.getElementById('esconderJogo').style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>FLOP-FLOP</h1>
+    <div class="trapezio">
+        <div class="quadCinza">
+            <canvas id="board"></canvas>
+        </div>
+        <button id="mostrarJogo" onclick="mostrarJogo()">
+            <img src="botao.png" alt="Botão Play" class="botao">
+        </button>
+    </div>
+    <div class="extras">
+        <a href="ajudaFlop-Flop.html">
+            <button class="button">Ajuda</button>
+        </a>
+        <button class="button" id="esconderJogo" onclick="esconderJogo()">Sair do Jogo</button>
+    </div>
+</body>
+
+</html>
